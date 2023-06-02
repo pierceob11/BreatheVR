@@ -26,6 +26,12 @@ public class WaterG : MonoBehaviour
 
                 // Instantiate the plane prefab at the calculated position
                 GameObject planeObject = Instantiate(planePrefab, position, Quaternion.identity);
+
+                // Assign a random Y rotation value (0, 90, 180, or 270) to the plane
+                float randomRotation = Random.Range(0, 4) * 90f;
+                planeObject.transform.rotation = Quaternion.Euler(0f, randomRotation, 0f);
+
+                // Set the plane as a child of the GridInitializer GameObject
                 planeObject.transform.SetParent(transform);
             }
         }
