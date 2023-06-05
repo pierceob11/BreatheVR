@@ -8,8 +8,10 @@ public class WaypointFollower : MonoBehaviour
     public float movementSpeed = 5f; // The movement speed of the object
     public float turningSpeed = 5f; // The turning speed of the object
     public float minDistanceToWaypoint = 1f; // The minimum distance to maintain from the waypoint
+    public float waitTime = 1f; // The wait time in seconds before moving to the next waypoint
 
     private int currentWaypointIndex = 0; // Index of the current waypoint
+    private bool isWaiting = false; // Flag indicating if the object is waiting
 
     void Start()
     {
@@ -26,18 +28,12 @@ public class WaypointFollower : MonoBehaviour
         // Check if the object is within the minimum distance to the waypoint
         if (direction.magnitude <= minDistanceToWaypoint)
         {
-            // Increment the waypoint index
-            currentWaypointIndex++;
-
-            // Check if the current waypoint index exceeds the array length
-            if (currentWaypointIndex >= waypoints.Length)
+            if (!isWaiting)
             {
-                // Reset the waypoint index to loop back to the first waypoint
-                currentWaypointIndex = 0;
+                // Start waiting
+                isWaiting = true;
+                StartCoroutine(WaitBeforeNextWaypoint());
             }
-
-            // Print the new waypoint the object is moving towards
-            Debug.Log("Moving towards waypoint: " + currentWaypointIndex);
         }
         else
         {
@@ -51,5 +47,30 @@ public class WaypointFollower : MonoBehaviour
             // Move the object towards the waypoint (excluding the y-axis)
             transform.Translate(new Vector3(movement.x, 0f, movement.z));
         }
+    }
+
+    System.Collections.IEnumerator WaitBeforeNextWaypoint()
+    {
+        // Print the new waypoint the object is moving towards
+        Debug.Log("Reached waypoint: " + currentWaypointIndex);
+
+        // Wait for the specified wait time
+        yield return new WaitForSeconds(waitTime);
+
+        // Increment the waypoint index
+        currentWaypointIndex++;
+
+        // Check if the current waypoint index exceeds the array length
+        if (currentWaypointIndex >= waypoints.Length)
+        {
+            // Reset the waypoint index to loop back to the first waypoint
+            currentWaypointIndex = 0;
+        }
+
+        // Print the new waypoint the object is moving towards
+        Debug.Log("Moving towards waypoint: " + currentWaypointIndex);
+
+        // Stop waiting
+        isWaiting = false;
     }
 }
