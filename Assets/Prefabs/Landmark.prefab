@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6966504809990055603}
   - component: {fileID: 3897695546090110498}
   - component: {fileID: 4207156582365977917}
-  - component: {fileID: 92692884954355827}
+  - component: {fileID: 3290890004223869845}
   m_Layer: 0
   m_Name: Landmark
   m_TagString: Untagged
@@ -35,9 +35,9 @@ Transform:
   - {fileID: 2535086378578404490}
   - {fileID: 6254007736552225757}
   - {fileID: 7015147469782360828}
-  - {fileID: 4626908812437705207}
+  - {fileID: 5169196076124878365}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3897695546090110498
 MeshFilter:
@@ -89,8 +89,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &92692884954355827
-BoxCollider:
+--- !u!135 &3290890004223869845
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,11 +104,11 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2640471523011691361
 PrefabInstance:
@@ -339,7 +339,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0ff0d6df45e5343ac1eda48701d35f, type: 3}
---- !u!4 &4626908812437705207 stripped
+--- !u!4 &5169196076124878365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6f0ff0d6df45e5343ac1eda48701d35f, type: 3}
   m_PrefabInstance: {fileID: 4626908812437705206}
