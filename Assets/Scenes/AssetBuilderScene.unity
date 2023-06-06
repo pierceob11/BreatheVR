@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 174141724}
   - component: {fileID: 174141726}
   - component: {fileID: 174141725}
+  - component: {fileID: 174141727}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -161,7 +162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -140}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 600, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &174141725
@@ -202,6 +203,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174141723}
   m_CullTransparentMesh: 1
+--- !u!95 &174141727
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174141723}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 56a5be12edda30f469b1da435857a0cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &262746143
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +307,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 262746146}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2123557830}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &262746146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,11 +669,12 @@ MonoBehaviour:
   dialogue:
     name: CBT Quotes
     sentences:
-    - "\u201CThe problem is not the problem. The problem is your attitude about the
-      problem\u201D"
-    - "\u201CThe happiness of your life depends upon the quality of your thoughts\u201D"
-    - "\u201CWhat you think of yourself is much more important than what others think
-      of you\u201D"
+    - "Sentence 1 \u201CThe problem is not the problem. The problem is your attitude
+      about the problem\u201D"
+    - "Sentence 2 \u201CThe happiness of your life depends upon the quality of your
+      thoughts\u201D"
+    - "Sentence 3 \u201CWhat you think of yourself is much more important than what
+      others think of you\u201D"
 --- !u!114 &481776302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1259,6 +1294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68c67c0a47b75142ae22d30bacac4a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 1482382758}
+  dialogueText: {fileID: 2120182480}
+  animator: {fileID: 174141727}
 --- !u!4 &2123557831
 Transform:
   m_ObjectHideFlags: 0
