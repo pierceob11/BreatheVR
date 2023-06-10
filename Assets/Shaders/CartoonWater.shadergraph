@@ -116,7 +116,35 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "60008310e0ef402fb5fd59c529626be6"
+        },
+        {
+            "m_Id": "b4d78dac4c7f4a2c849b82e4db0cdc35"
+        },
+        {
+            "m_Id": "071c92e0fbe244708b9d7968d6c5641d"
+        },
+        {
+            "m_Id": "9b94251b06bc4a3893311313781dd40c"
+        },
+        {
+            "m_Id": "ab073b6ed45a408196fbed7bf49b7152"
+        },
+        {
+            "m_Id": "5606cd423455483b8b410813b15f786b"
+        },
+        {
+            "m_Id": "77a3a117130943378aaea9708b062c3a"
+        },
+        {
+            "m_Id": "eb53f7d984964c67ab8168c32c6dfae7"
+        },
+        {
+            "m_Id": "bc117bea55b546ef99d0ef214df5b7f7"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -429,8 +457,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 425.00006103515627,
-            "y": -549.0
+            "x": 710.0,
+            "y": -637.0
         },
         "m_Blocks": [
             {
@@ -446,8 +474,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 425.00006103515627,
-            "y": -331.9999694824219
+            "x": 710.0,
+            "y": -420.0
         },
         "m_Blocks": [
             {
@@ -520,6 +548,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "071c92e0fbe244708b9d7968d6c5641d",
+    "m_Title": "Ripple thickness",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 88.0,
+        "y": 197.0,
+        "width": 200.0,
+        "height": 27.749984741210939
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
@@ -748,7 +796,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Alpha",
     "m_StageCapability": 2,
-    "m_Value": 0.800000011920929,
+    "m_Value": 1.0,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }
@@ -966,10 +1014,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 294.00006103515627,
-            "y": -293.9999694824219,
+            "x": 567.0,
+            "y": -141.99998474121095,
             "width": 131.0,
-            "height": 34.0
+            "height": 33.999969482421878
         }
     },
     "m_Slots": [
@@ -1510,6 +1558,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "5606cd423455483b8b410813b15f786b",
+    "m_Title": "Distortion",
+    "m_Content": "Mathmatical distortion of waters movement\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -286.0,
+        "y": -519.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "598b5370a69845f2b29f010adfefbcd0",
     "m_Id": 1,
@@ -1580,6 +1648,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "60008310e0ef402fb5fd59c529626be6",
+    "m_Title": "Ripples",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -269.0,
+        "y": 234.0,
+        "width": 200.0,
+        "height": 62.214569091796878
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "61c45f20946c43ab9bd192be354ca444",
     "m_Id": 0,
@@ -1622,7 +1710,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 2.0,
+    "m_Value": 2.5,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -1791,6 +1879,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "77a3a117130943378aaea9708b062c3a",
+    "m_Title": "Movement / Time",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -329.0,
+        "y": -667.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "7847d24ae0c44b64bfc3299376cc89a5",
     "m_Id": 2,
@@ -1833,7 +1941,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 5.0,
+    "m_Value": 1.399999976158142,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -2046,10 +2154,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -448.9999694824219,
-            "y": -523.0,
-            "width": 207.9999542236328,
-            "height": 350.0
+            "x": -493.9999694824219,
+            "y": -523.0000610351563,
+            "width": 208.0,
+            "height": 350.00006103515627
         }
     },
     "m_Slots": [
@@ -2121,8 +2229,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -63.99996566772461,
-            "y": 48.000057220458987,
+            "x": -66.0,
+            "y": 48.00001907348633,
             "width": 153.99996948242188,
             "height": 33.99997329711914
         }
@@ -2196,6 +2304,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "9b94251b06bc4a3893311313781dd40c",
+    "m_Title": "Ripple Colour",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 440.0,
+        "y": 199.0,
+        "width": 200.0,
+        "height": 34.64997863769531
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.NormalVectorNode",
     "m_ObjectId": "9fa5a2d724c04a75a22134975a371ac5",
     "m_Group": {
@@ -2206,10 +2334,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -333.0000305175781,
-            "y": -1356.0001220703125,
-            "width": 207.99996948242188,
-            "height": 315.0001220703125
+            "x": -333.0,
+            "y": -1349.0,
+            "width": 208.0,
+            "height": 315.0
         }
     },
     "m_Slots": [
@@ -2250,7 +2378,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.10000000149011612,
+    "m_Value": 0.05000000074505806,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -2356,10 +2484,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -432.9999694824219,
-            "y": 65.00004577636719,
-            "width": 147.0,
-            "height": 33.999969482421878
+            "x": -433.0000305175781,
+            "y": -36.999969482421878,
+            "width": 147.00003051757813,
+            "height": 33.99996566772461
         }
     },
     "m_Slots": [
@@ -2416,6 +2544,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "ab073b6ed45a408196fbed7bf49b7152",
+    "m_Title": "Alpha",
+    "m_Content": "Alpha = Water Trasparency",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 938.0,
+        "y": -408.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "b213385951b942fe9e58121447b5ffb0",
     "m_Id": 2,
@@ -2448,6 +2596,26 @@
         "y": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "b4d78dac4c7f4a2c849b82e4db0cdc35",
+    "m_Title": "Ripple movement",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -637.0,
+        "y": 195.0,
+        "width": 200.0,
+        "height": 55.3499755859375
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
@@ -2574,11 +2742,31 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 6.0,
+    "m_Value": 7.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "bc117bea55b546ef99d0ef214df5b7f7",
+    "m_Title": "Wave Height",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -330.0,
+        "y": -1457.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
@@ -2594,10 +2782,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -751.0000610351563,
-            "y": -1026.0,
+            "x": -728.0000610351563,
+            "y": -991.0,
             "width": 208.0,
-            "height": 326.00006103515627
+            "height": 326.0
         }
     },
     "m_Slots": [
@@ -2914,8 +3102,8 @@
     "m_ShaderOutputName": "Tiling",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 1.0,
-        "y": 1.0
+        "x": 0.800000011920929,
+        "y": 0.800000011920929
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -2993,10 +3181,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1257.0001220703125,
-            "y": -665.0,
+            "x": -1257.0,
+            "y": -666.9999389648438,
             "width": 138.0,
-            "height": 34.0
+            "height": 33.99993896484375
         }
     },
     "m_Slots": [
@@ -3044,10 +3232,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 221.9999237060547,
-            "y": -1192.0,
-            "width": 207.99998474121095,
-            "height": 301.99993896484377
+            "x": 160.0,
+            "y": -1206.0,
+            "width": 130.0,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -3067,7 +3255,7 @@
         "plus"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -3101,6 +3289,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "eb53f7d984964c67ab8168c32c6dfae7",
+    "m_Title": "Gradient movement",
+    "m_Content": "Write something here",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -724.0,
+        "y": -668.0,
+        "width": 215.7410888671875,
+        "height": 63.80462646484375
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "ed0cc1129672446099470002d9447627",
     "m_Group": {
@@ -3111,10 +3319,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -641.0,
-            "y": -92.99996185302735,
+            "x": -641.0000610351563,
+            "y": -103.0,
             "width": 208.00003051757813,
-            "height": 302.0000305175781
+            "height": 301.9999694824219
         }
     },
     "m_Slots": [
@@ -3154,9 +3362,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -487.0,
-            "y": -884.0,
-            "width": 148.99993896484376,
+            "x": -482.0,
+            "y": -890.0,
+            "width": 149.0,
             "height": 34.0
         }
     },
@@ -3259,8 +3467,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1080.0,
-            "y": -851.0,
+            "x": -1078.0,
+            "y": -935.0,
             "width": 207.99993896484376,
             "height": 302.0
         }
