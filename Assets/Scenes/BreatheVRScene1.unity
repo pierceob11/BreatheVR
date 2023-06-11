@@ -782,7 +782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3548174429218563935, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3548174429218563935, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: movementSpeed
@@ -818,7 +818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7340324559602383332, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7340324559602383332, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: m_LocalPosition.z
@@ -854,11 +854,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: m_LocalPosition.z
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -916,10 +936,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planePrefab: {fileID: 2075155857850835077, guid: 2094304e0dc7dac44af82ef456e87d9e, type: 3}
-  minX: -3
-  minZ: -3
-  maxX: 3
-  maxZ: 3
+  minX: -6
+  minZ: -6
+  maxX: 6
+  maxZ: 6
 --- !u!1001 &3856596198293235646
 PrefabInstance:
   m_ObjectHideFlags: 0

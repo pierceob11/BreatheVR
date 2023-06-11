@@ -9,6 +9,7 @@ public class WaterGridInitializer : MonoBehaviour
     public int minZ;               // Minimum value for the Z-axis
     public int maxX;               // Maximum value for the X-axis
     public int maxZ;               // Maximum value for the Z-axis
+    public float scaleMultiplier = 1.5f; //Scale adjustment multiplier
 
     void Start()
     {
@@ -49,7 +50,7 @@ public class WaterGridInitializer : MonoBehaviour
         foreach (GameObject placedPlane in placedPlanes)
         {
             Vector3 currentScale = placedPlane.transform.localScale;
-            Vector3 newScale = new Vector3(currentScale.x * 1.5f, currentScale.y, currentScale.z * 1.5f);
+            Vector3 newScale = new Vector3(currentScale.x * scaleMultiplier, currentScale.y, currentScale.z * scaleMultiplier);
             placedPlane.transform.localScale = newScale;
         }
     }
