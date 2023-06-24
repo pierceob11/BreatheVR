@@ -4,61 +4,38 @@ using UnityEngine;
 
 public class BreathingSystem : MonoBehaviour
 {
-    public ParticleSystem inhale;
-    public ParticleSystem exhale;
-    public float waitTimer = 2.0f;
-    public float playTimer = 3.5f;
+    public ParticleSystem inhaleParticles;
+    public ParticleSystem exhaleParticles;
+    public float particleOnTime = 2f;  // Time the particle systems are turned on for
+    public float waitTime = 5f;  // Public wait time between alternation of particle systems
 
-    private bool isPlaying = false;
-    private bool isWaiting = false;
+    private bool isBreathing = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
+        StartCoroutine(BreathingRoutine());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator BreathingRoutine()
     {
-        //Enable Inhale system
-        inhale.Play();
-        Debug.Log("Playing inhale");
+        while (true)
+        {
+            // Enable inhale particles
+            inhaleParticles.Play();
+            exhaleParticles.Stop();
 
-        WaitWhileItPlays(); //Waiting for inhale to finish
+            isBreathing = true;
+            yield return new WaitForSeconds(particleOnTime);
 
-        inhale.Stop();
-        Debug.Log("Stopping inhale");
+            // Enable exhale particles
+            inhaleParticles.Stop();
+            exhaleParticles.Play();
 
-        WaitBeforeNextBreath();
+            isBreathing = false;
+            yield return new WaitForSeconds(particleOnTime);
 
-        exhale.Play();
-
-        WaitWhileItPlays();
-
-        exhale.Stop();
-
-
-    }
-
-
-    System.Collections.IEnumerator WaitBeforeNextBreath()
-    {
-
-        // Wait for the specified wait time
-    yield return new WaitForSeconds(waitTimer);
+            // Wait for the specified wait time before repeating the breathing cycle
+            yield return new WaitForSeconds(waitTime);
         }
-
-
-    System.Collections.IEnumerator WaitWhileItPlays()
-    {
-
-        // Wait for the specified wait time
-        yield return new WaitForSeconds(playTimer);
-
-      
-       
     }
-
-
 }
