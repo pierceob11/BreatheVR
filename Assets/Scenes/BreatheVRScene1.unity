@@ -33,7 +33,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 1024
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -644,24 +644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd68f027e715c44aa8d097000d4cccfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1178682006 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5794013960089496232, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-  m_PrefabInstance: {fileID: 3834016125554171815}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1178682008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178682006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
 --- !u!1 &1242689699 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8997711468597663967, guid: ab45582886e6f5a4d9e7334fa1c63c9d, type: 3}
@@ -833,20 +815,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3548174429218563935, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: waitTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3548174429218563935, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: turningSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3548174429218563935, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: movementSpeed
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3548174429218563935, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: minDistanceToWaypoint
-      value: 20
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3548174429218563935, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -908,99 +882,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 26807930479323744, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3923761492289343743, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 3834016125554171817}
-    - targetCorrespondingSourceObject: {fileID: 3923761492289343743, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3834016125554171823}
-    - targetCorrespondingSourceObject: {fileID: 5794013960089496232, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1178682008}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30371fea13b3b80469b24a991468c115, type: 3}
---- !u!1 &3834016125554171816 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3923761492289343743, guid: 30371fea13b3b80469b24a991468c115, type: 3}
-  m_PrefabInstance: {fileID: 3834016125554171815}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &3834016125554171817
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3834016125554171816}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &3834016125554171823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3834016125554171816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81433369500ba23478419805c0e12c30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planePrefab: {fileID: 2075155857850835077, guid: 2094304e0dc7dac44af82ef456e87d9e, type: 3}
-  minX: -10
-  minZ: -10
-  maxX: 10
-  maxZ: 10
-  scaleMultiplier: 1.2
 --- !u!1001 &3856596198293235646
 PrefabInstance:
   m_ObjectHideFlags: 0
