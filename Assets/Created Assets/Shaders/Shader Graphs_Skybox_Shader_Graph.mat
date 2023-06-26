@@ -29,6 +29,8 @@ Material:
     - _BUILTIN_QueueOffset: 0
     - _HorizonBlend: 30
     - _NadirBlend: 1
+    - _StarHeight: 350
+    - _StarPower: 13
     - _ZenithBlend: 1
     m_Colors:
     - _HorizonColour: {r: 0.99607843, g: 0.9529412, b: 0.6156863, a: 0}
