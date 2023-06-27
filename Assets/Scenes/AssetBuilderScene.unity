@@ -753,6 +753,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781392609793036420, guid: 30371fea13b3b80469b24a991468c115, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8212206986177796138, guid: 30371fea13b3b80469b24a991468c115, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1002,7 +1010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1958919139
 Transform:
   m_ObjectHideFlags: 0
@@ -1037,11 +1045,10 @@ MonoBehaviour:
   - {fileID: 690917543}
   - {fileID: 23318248}
   - {fileID: 1509848345}
-  rotationAxes: []
   rotationSpeeds:
-  - 0.5
-  - 0.25
-  - 0.15
+  - 50
+  - 25
+  - 15
 --- !u!1 &2002675207 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8997711468597663967, guid: ab45582886e6f5a4d9e7334fa1c63c9d, type: 3}
